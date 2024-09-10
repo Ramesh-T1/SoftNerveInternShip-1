@@ -1,0 +1,30 @@
+<h2>Add Student</h2>
+<div class="container">
+
+<label>Id</label>
+<input [(ngModel)]="newStudent.id" type="number" class="form-control" name="id" id="uid"/>
+<br/><br/>
+
+<label>Name</label>
+<input [(ngModel)]="newStudent.name" type="text" class="fomr-control" name="name" id="n" required="required"/>
+<br/><br/>
+
+
+<label>Contact Details</label>
+<input [(ngModel)]="newStudent.contactdetails" type="number" class="form-control" name="contactdetails" id="cd" required="required"/>
+<br/><br/>
+
+
+<label>Address</label>
+<input [(ngModel)]="newStudent.address" type="text" class="fomr-control" name="address" id="addr" required="required"/>
+<br/><br/>
+
+
+<label>Pincode</label>
+<input [(ngModel)]="newStudent.pincode" type="text" class="fomr-control" name="pincode" id="pin" required="required"/>
+<br/><br/>
+
+<div>
+<button class="btn btn-success" (click)="saveUser()">Save</button>
+</div>
+</div>
